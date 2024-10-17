@@ -1,0 +1,11 @@
+.empty-side {
+    position: relative;
+    width: 10%;
+}
+
+.icon {
+    position: absolute;
+    width: 50px; /* Ajusta según necesites */
+    opacity: 0; /* Oculto por defecto */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones */
+}

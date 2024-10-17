@@ -132,9 +132,9 @@ section { overflow: hidden; }*/
 @media screen {
 
     #logo-innova-black {
-        width: 200px;
+    width: 200px;
     height: 60px;
-        margin-top: -60px;
+    margin-top: -60px;
 
 }
 }
@@ -177,7 +177,7 @@ section { overflow: hidden; }*/
 
 /*bacground color*/
 .bg-light {
-    background-color: #f3f3f3;
+    background-color: #96989A;
 }
 
 .bg-primary {
@@ -189,7 +189,7 @@ section { overflow: hidden; }*/
 }
 
 .bg-mega {
-    background-color: #e5e5e5;
+    background-color: black;
 }
 
 .bg-grey {
@@ -585,7 +585,7 @@ Extra height css
 }
 
 .m-top-40 {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .m-top-50 {
@@ -898,14 +898,19 @@ textarea::-ms-input-placeholder {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 2.286rem;
-    color: #1a1a1a;
+    color: #000;
+}
+
+.head_title h5 {
+    color: #000;
 }
 
 .head_title p {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    color: #4a4a4a;
+    color: #000;
+    top: -222px;
 }
 
 /*End off pridifain css*/
@@ -1170,10 +1175,13 @@ About section style
 
 }
 
-.counter_item h5 {}
+.counter_item h2, h5 {
+    color: whitesmoke;
+}
 
 .counter_item .separator_small {
     margin: 20px auto;
+    background-color: whitesmoke;
 }
 
 
@@ -1187,22 +1195,27 @@ About section style
     top: -40px;
 }
 
+.work_item h4{
+    
+}
+
 .work_item_img img {
     width: 100%;
 }
 
 .work_item_details {
     position: relative;
+    top: -10px;
 }
 
 .work_separator1:before {
     content: "";
     position: absolute;
     right: -40%;
-    top: 43%;
-    width: 180px;
-    height: 1px;
-    background-color: #ee997b;
+    top: 30%;
+    width: 280px;
+    height: 3px;
+    background-color: #000;
     z-index: 1;
 }
 
@@ -1210,10 +1223,10 @@ About section style
     content: "";
     position: absolute;
     left: -40%;
-    top: 43%;
-    width: 180px;
-    height: 1px;
-    background-color: #ee997b;
+    top: 30%;
+    width: 280px;
+    height: 3px;
+    background-color: #000;
     z-index: 1;
 }
 
@@ -1582,7 +1595,7 @@ Footer Section style
 
 .main_footer p a,
 .main_footer li a {
-    color: #000;
+    color: whitesmoke;
 }
 
 
@@ -1591,9 +1604,9 @@ Footer Section style
 /* scrollup */
 
 .scrollup {
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
     opacity: .3;
     position: fixed;
     bottom: 20px;

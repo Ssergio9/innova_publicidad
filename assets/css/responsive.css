@@ -65,7 +65,8 @@ Author URI: http://www.xpeedstudio.com
     .work_separator2:before{
         margin-left:-90px;
         left: 50%;
-        top: 50%;
+        top: 33%;
+        height: 1px;
         z-index: 1;
     }
     .separator_left{
