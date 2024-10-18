@@ -12,7 +12,7 @@
 
 #flipbook .page {
     width: 80%;
-    height: 600px;
+    height: 600px;  
 }
 
 
@@ -20,6 +20,8 @@
     height: 600px;
     width: 100%;
     max-width: 520px;
+    border: 1px inset grey;    
+    border-radius: 1px; /* Opcional: bordes redondeados */
 }
 
  @media screen and (max-width: 768px) {

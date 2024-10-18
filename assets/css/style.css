@@ -141,11 +141,30 @@ section { overflow: hidden; }*/
 
 
 
-@media (max-width: 768px) {
-    .model-banner {
+@media (max-width: 740) {
+
+    .model-banner,
+    .contactus-banner {
         top: -15vh !important;
     }
 }
+
+/* @media (max-width: 740) {
+    .service-banner {
+    }
+
+    .model-banner {
+    }
+
+    .contact-banner {
+    }
+
+    .about-banner {
+    }
+
+    .blog-banner {
+    }
+} */
 
 /*text color*/
 
@@ -209,7 +228,7 @@ section { overflow: hidden; }*/
     background: linear-gradient(to bottom, #000007, #96989A);
 }
 
-.bg-grey .limit-grey{
+.bg-grey .limit-grey {
     color: whitesmoke;
 }
 
@@ -464,6 +483,7 @@ Separator
     height: 2px;
     margin: 20px 0px;
     background: #000;
+    bottom: 225px;
 }
 
 .separator_center {
@@ -1107,9 +1127,10 @@ Nav Menu style
 .contact-banner,
 .about-banner,
 .blog-banner,
-.home {
+.home,
+.new-banner {
     background-size: cover;
-    position: relative;
+    position: relative ;
 }
 
 .home {
@@ -1141,7 +1162,22 @@ Nav Menu style
     top: -2vh;
 }
 
+.service-banner {
+    background: url(../images/background/services-bg.jpg) no-repeat bottom center;
+}
 
+.new-banner {
+    background: url(/our_lines/print/images/printer.jpg);
+    opacity: 60%;
+    filter: grayscale(100%);
+    top: -5vh;
+}
+
+@media screen and (max-width: 768px) {
+    .new-banner {
+        margin-top: 65px;
+    }
+}
 
 /*
 Home Section style
@@ -1229,7 +1265,6 @@ h5 {
 
 .work_item {
     position: relative;
-    top: -40px;
 }
 
 .work_item h4 {}
@@ -1252,6 +1287,7 @@ h5 {
     height: 3px;
     background-color: #000;
     z-index: 1;
+    bottom: 25px;
 }
 
 .work_separator2:before {
@@ -1263,6 +1299,7 @@ h5 {
     height: 3px;
     background-color: #000;
     z-index: 1;
+    bottom: 25px;
 }
 
 
