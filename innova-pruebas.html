@@ -1,146 +1,70 @@
-<div class="container">
-    <div class="row">
-        <div class="main_work">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Cristal CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            font-size: 24px;
+        }
 
-            <div class="col-md-7 col-sm-12 col-xs-12 empty-side">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
-                    <!-- Reemplaza esto con tu SVG -->
-                    <circle cx="50" cy="50" r="40" />
-                </svg>
-            </div>
+        body {
+            background: linear-gradient(to left, #283593, #1976d2);
+            height: 100vh;
+            font-family: "Josefin Sans", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12">
-                <div class="work_item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12 col-xs-12 text-right pull-right sm-text-center">
-                            <div class="work_item_img">
-                                <img src="assets/images/instalacion.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12 col-xs-12 text-right pull-left sm-text-center">
-                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                <h4>Instalación</h4>
-                                <div class="work_separator1"></div>
-                                <p class="m-top-40 sm-m-top-10">En INNOVA, brindamos instalación para todos nuestros productos, desde vinilos hasta vallas publicitarias. Consulta con nosotros para recibir asesoramiento especializado.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End off work-item -->
+        .card {
+            position: relative;
+            height: 270px;
+            width: 450px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-            <div class="col-md-7 col-sm-12 col-xs-12 empty-side">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
-                    <!-- Reemplaza esto con tu SVG -->
-                    <rect width="100" height="100" />
-                </svg>
-            </div>
+        .card-title {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 10px;
+        }
 
-            <div class="col-md-7 col-sm-12 col-xs-12">
-                <div class="work_item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12 col-xs-12">
-                            <div class="work_item_img sm-text-center sm-m-top-40">
-                                <img src="assets/images/transporte.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
-                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                <h4>Transporte</h4>
-                                <div class="work_separator2"></div>
-                                <p class="m-top-40 sm-m-top-10">Para satisfacer las necesidades de nuestros clientes que requieren el transporte de productos a nivel nacional, contamos con una flota de camiones propios, asegurando una entrega eficiente y confiable.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End off work-item -->
+        p {
+            color: rgba(255, 255, 255, 0.7);
+        }
 
-            <div class="col-md-7 col-md-offset-5 col-sm-12 col-xs-12 empty-side">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
-                    <!-- Reemplaza esto con tu SVG -->
-                    <polygon points="50,5 100,100 0,100" />
-                </svg>
-            </div>
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
 
-            <div class="col-md-7 col-sm-12 col-xs-12">
-                <div class="work_item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12 col-xs-12">
-                            <div class="work_item_img sm-text-center sm-m-top-40">
-                                <img src="assets/images/diseño.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
-                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                <h4>Diseño</h4>
-                                <div class="work_separator1"></div>
-                                <p class="m-top-40 sm-m-top-10">En INNOVA, contamos con diseñadores calificados para atender las necesidades de tu empresa. Si necesitas asesoría visual o algún diseño específico, no dudes en contactarnos.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End off work-item -->
-
-            <div class="col-md-7 col-sm-12 col-xs-12 empty-side">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
-                    <!-- Reemplaza esto con tu SVG -->
-                    <path d="M10 10 h 80 v 80 h -80 Z" />
-                </svg>
-            </div>
-
-            <div class="col-md-7 col-sm-12 col-xs-12">
-                <div class="work_item">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12 col-xs-12">
-                            <div class="work_item_img sm-text-center sm-m-top-40">
-                                <img src="assets/images/otros.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12 col-xs-12 text-left pull-left sm-text-center">
-                            <div class="work_item_details m-top-80 sm-m-top-20">
-                                <h4>Entre otros</h4>
-                                <div class="work_separator2"></div>
-                                <p class="m-top-40 sm-m-top-10">Además de nuestras líneas de negocio, ofrecemos servicios especializados que complementan nuestros productos. No dudes en consultarnos para más información.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End off work-item -->
-
-        </div>
+        a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3 class="card-title">Efecto Cristal CSS</h3>
+        <p>Aprende a crear tu efecto cristal mediante CSS desde 0.</p>
+        <a href="https://carontestudio.com/">Saber más</a>
     </div>
-</div>
-
-<!-- JavaScript -->
-<script>
-    window.addEventListener('load', function() {
-        window.addEventListener('scroll', function() {
-            const icons = document.querySelectorAll('.icon');
-            icons.forEach(icon => {
-                const rect = icon.getBoundingClientRect();
-                // Verifica si el ícono está dentro de la vista
-                if (rect.top < window.innerHeight && rect.bottom > 0) {
-                    icon.style.opacity = 1; // Muestra el ícono
-                    icon.style.transform = 'translateX(0)'; // Asegúrate de que se vea desde el lado
-                } else {
-                    icon.style.opacity = 0; // Oculta el ícono si no está en vista
-                    icon.style.transform = 'translateX(-50px)'; // Mueve el ícono fuera de vista
-                }
-            });
-        });
-    });
-</script>
-
-<!-- CSS -->
-<style>
-.empty-side {
-    position: relative;
-}
-
-.icon {
-    position: absolute;
-    width: 50px; /* Ajusta según necesites */
-    opacity: 0; /* Oculto por defecto */
-    transform: translateX(-50px); /* Comienza desplazado a la izquierda */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones */
-}
-</style>
+</body>
+</html>

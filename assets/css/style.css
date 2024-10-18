@@ -132,11 +132,19 @@ section { overflow: hidden; }*/
 @media screen {
 
     #logo-innova-black {
-    width: 200px;
-    height: 60px;
-    margin-top: -60px;
+        width: 200px;
+        height: 60px;
+        margin-top: -60px;
 
+    }
 }
+
+
+
+@media (max-width: 768px) {
+    .model-banner {
+        top: -15vh !important;
+    }
 }
 
 /*text color*/
@@ -178,6 +186,7 @@ section { overflow: hidden; }*/
 /*bacground color*/
 .bg-light {
     background-color: #96989A;
+    color: whitesmoke;
 }
 
 .bg-primary {
@@ -189,11 +198,19 @@ section { overflow: hidden; }*/
 }
 
 .bg-mega {
-    background-color: black;
+    background: linear-gradient(to bottom, #96989A, #000007);
+}
+
+.bg-mega .limit {
+    color: whitesmoke;
 }
 
 .bg-grey {
-    background-color: #f5f5f5;
+    background: linear-gradient(to bottom, #000007, #96989A);
+}
+
+.bg-grey .limit-grey{
+    color: whitesmoke;
 }
 
 .bg-black {
@@ -447,6 +464,20 @@ Separator
     height: 2px;
     margin: 20px 0px;
     background: #000;
+}
+
+.separator_center {
+    width: 185px;
+    height: 2px;
+    margin: auto;
+    background: #000;
+}
+
+.separator_left_white {
+    width: 85px;
+    height: 2px;
+    margin: 20px 0px;
+    background: whitesmoke;
 }
 
 .separator_auto {
@@ -1091,18 +1122,23 @@ Nav Menu style
 
 .model-banner {
     background: url(../images/background/model-bg.jpg) no-repeat bottom center;
+    opacity: 80%;
+    top: -5vh;
 }
 
 .contact-banner {
     background: url(../images/background/contact-bg.jpg) no-repeat bottom center;
+    top: -2vh;
 }
 
 .about-banner {
     background: url(../images/background/about-bg.jpg) no-repeat bottom center;
+    top: -2vh;
 }
 
 .blog-banner {
     background: url(../images/background/blog-bg.jpg) no-repeat bottom center;
+    top: -2vh;
 }
 
 
@@ -1154,7 +1190,7 @@ About section style
 .feature_img img {
     width: 100%;
     right: 10%;
-    top: 10%;
+    top: 510;
 }
 
 .photo_border {
@@ -1175,7 +1211,8 @@ About section style
 
 }
 
-.counter_item h2, h5 {
+.counter_item h2,
+h5 {
     color: whitesmoke;
 }
 
@@ -1195,9 +1232,7 @@ About section style
     top: -40px;
 }
 
-.work_item h4{
-    
-}
+.work_item h4 {}
 
 .work_item_img img {
     width: 100%;
@@ -1285,7 +1320,7 @@ About section style
 .main-gallery .grid {
     margin: 0;
     padding: 0;
-    
+
 }
 
 /* clear fix */
